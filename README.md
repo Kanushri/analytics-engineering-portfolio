@@ -28,7 +28,7 @@ snowflake_concepts/
 dbt_learning/
 projects/
 notes/
-learning_tracker.md
+progress_tracker.md
 ```
 
 ## Current Progress
