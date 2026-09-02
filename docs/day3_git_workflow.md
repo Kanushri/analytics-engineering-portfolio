@@ -26,3 +26,13 @@ git commit -m "<message>"
 git push origin <branch>
 git log --oneline --graph --decorate
 git branch -vv
+
+
+## personal notes:
+### A useful distinction
+| Screen                                | What you're in | Exit                      |
+| ------------------------------------- | -------------- | ------------------------- |
+| `(END)`                               | `less` pager   | `q`                       |
+| Lots of `~` and editing a Git message | Vim            | `:q` / `:wq`              |
+| `%` prompt                            | zsh            | You're ready for commands |
+
