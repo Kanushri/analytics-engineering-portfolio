@@ -1,0 +1,40 @@
+{
+    "path_count": 141,
+    "parsed_path_count": 1,
+    "static_analysis_path_count": 1,
+    "static_analysis_parsed_path_count": 1,
+    "is_partial_parse_enabled": true,
+    "is_static_analysis_enabled": true,
+    "read_files_elapsed": 0.019007041002623737,
+    "load_macros_elapsed": 0.00020754197612404823,
+    "parse_project_elapsed": 0.07118987495778129,
+    "patch_sources_elapsed": 7.5830030255019665e-06,
+    "process_manifest_elapsed": 0.00017449998995289207,
+    "load_all_elapsed": 0.18478854198474437,
+    "projects": [
+        {
+            "project_name": "analytics_engineering_portfolio",
+            "elapsed": 0.07115345896454528,
+            "parsers": [
+                {
+                    "parser": "model",
+                    "elapsed": 0.07114812498912215,
+                    "parsed_path_count": 1
+                }
+            ],
+            "parsed_path_count": 1
+        },
+        {
+            "project_name": "dbt_postgres",
+            "elapsed": 0,
+            "parsers": [],
+            "parsed_path_count": 0
+        },
+        {
+            "project_name": "dbt",
+            "elapsed": 0,
+            "parsers": [],
+            "parsed_path_count": 0
+        }
+    ]
+}
