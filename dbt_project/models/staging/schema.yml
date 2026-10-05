@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: Cleaned customer data from the raw source.
+    columns:
+      - name: customer_id
+        description: Unique identifier for a customer.
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        tests:
+          - not_null
+
+  - name: stg_payments
+    description: Cleaned payment transaction data.
+    columns:
+      - name: payment_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_customers')
+                field: customer_id
+
+      - name: payment_status
+        tests:
+          - accepted_values:
+              arguments:
+                values: ['paid', 'failed', 'refunded']
+
+  - name: stg_subscriptions
+    description: Cleaned subscription data.
+    columns:
+      - name: subscription_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
