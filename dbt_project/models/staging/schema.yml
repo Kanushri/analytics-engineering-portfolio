@@ -35,6 +35,13 @@ models:
           - accepted_values:
               arguments:
                 values: ['paid', 'failed', 'refunded']
+      - name: subscription_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('stg_subscriptions')
+                field: subscription_id
 
   - name: stg_subscriptions
     description: Cleaned subscription data.
