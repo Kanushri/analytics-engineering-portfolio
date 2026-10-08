@@ -6,3 +6,4 @@
 | 4   | Dimensional Data Modeling | ✅      | Facts, dimensions, grain, SCD, fact types, normalization, star schema                                                     |
 | 5   | dbt Foundations           | ✅      | Sources → staging → intermediate → marts, `source()` vs `ref()`, materializations, testing, dbt workflow                  |
 | 6   | dbt Incremental Models    | ✅      | Built incremental model, tested new records and updates, `is_incremental()`, `unique_key`, incremental filter limitations |
+| 7   | dbt Data Quality & Testing | ✅      | Built-in tests, custom SQL test, relationship testing, intentional failures/debugging, business rules                    |
